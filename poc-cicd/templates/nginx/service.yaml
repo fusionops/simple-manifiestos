@@ -16,5 +16,4 @@ spec:
   selector:
     app: simple-nginx
     deploymentconfig: simple-nginx
-  type: ClusterIP
   sessionAffinity: None
