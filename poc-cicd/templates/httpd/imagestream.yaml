@@ -2,7 +2,6 @@ kind: ImageStream
 apiVersion: image.openshift.io/v1
 metadata:
   name: simple-httpd
-  namespace: poc-intermedia
   labels:
     app: simple-httpd
     app.kubernetes.io/component: simple-httpd
