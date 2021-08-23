@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: simple-httpd
+  name: simple-git
 spec:
   ports:
     - protocol: TCP
