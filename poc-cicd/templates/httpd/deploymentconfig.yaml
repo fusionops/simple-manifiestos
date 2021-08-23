@@ -1,10 +1,10 @@
 kind: DeploymentConfig
 apiVersion: apps.openshift.io/v1
 metadata:
+  name: simple-httpd
   annotations:
     openshift.io/generated-by: OpenShiftWebConsole
   name: simple-httpd
-  generation: 2
   labels:
     app: simple-httpd
     app.kubernetes.io/component: simple-httpd
@@ -32,8 +32,6 @@ spec:
         from:
           kind: ImageStreamTag
           name: 'simple-httpd:a9cea7709a69675d7f87a4f26010cf85e8f500d5'
-        lastTriggeredImage: >-
-          image-registry.openshift-image-registry.svc:5000/poc-intermedia/simple-httpd@sha256:963707a7073cfb7a83c2b55c541f5212bfafcfd0a1ce0d102639507e4f7d885b
     - type: ConfigChange
   replicas: 2
   revisionHistoryLimit: 10
